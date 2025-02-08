@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operation: Belly of the Beast</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="initApp()">
+
+    <!-- Navigation Tabs -->
+    <div id="tabs">
+        <button onclick="switchTab('nightwave')">Nightwave</button>
+        <button onclick="switchTab('lich')">Lich Hunts</button>
+        <button onclick="switchTab('belly')">Belly of the Beast</button>
+        <button onclick="switchTab('circuit')">Circuit Tracker</button>
+    </div>
+
+    <!-- Centered Content -->
+    <div class="container">
+        <div id="content">
+            <div id="nightwave" class="tab"></div>
+            <div id="lich" class="tab"></div>
+
+            <!-- Belly of the Beast Tab -->
+            <div id="belly" class="tab active">
+                <h1 class="belly-title">Operation: Belly of the Beast</h1>
+                <div id="belly-tracker"></div>
+            </div>
+
+            <div id="circuit" class="tab"></div>
+        </div>
+    </div>
+
+    <!-- Load Scripts -->
+    <script src="js/app.js"></script>
+    <script src="js/nightwave.js"></script>
+    <script src="js/lich_hunts.js"></script>
+    <script src="js/bob.js"></script>
+    <script src="js/circuit.js"></script>
+</body>
+</html>

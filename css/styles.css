@@ -1,0 +1,9 @@
+/* Rounded buttons */
+.rounded-btn {
+    border-radius: 12px;
+}
+
+/* Rounded counters */
+.number-box {
+    border-radius: 8px;
+}
